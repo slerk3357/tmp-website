@@ -1,0 +1,48 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="{{ site.baseurl }}/" target="_top">
+        <style>
+            body {
+                background-color: #000;
+            }
+        </style>
+        <script src="components/card/card.js"></script>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="style/sanitize.css">
+            <link rel="stylesheet" href="style/global.css">
+            <link rel="stylesheet" href="components/card-section/card-section.css">
+
+            <section>
+                <h1>
+                    <slot name="title">title</slot>
+                </h1>
+                <div id="cardArray">
+                    <slot name="card">---
+---
+<!-- <digest-card></digest-card> --></slot>
+                </div>
+            </section>
+        </template>
+        <card-section>
+            <span slot="title">最近の更新</span>
+            <digest-card href="" slot="card">
+                <span slot="date">2023/10/18</span>
+                <span slot="title">新ホームページ開設！</span>
+                <span slot="content">群馬高専電算部の新たなホームページを公開しました。このホームページは2023年度に作成され、WEB班によって管理されています。</span>
+            </digest-card>
+            <digest-card href="" slot="card">
+                <span slot="date">2023/10/18</span>
+                <span slot="title">2023年度 D言語</span>
+                <span slot="content">2023年度電算部の部誌です。</span>
+            </digest-card>
+        </card-section>
+        <script src="components/card-section/card-section.js"></script>
+    </body>
+</html>

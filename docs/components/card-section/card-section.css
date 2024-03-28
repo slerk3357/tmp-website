@@ -1,0 +1,22 @@
+:host{
+    --card-section-horizontal-padding:16px;
+    --section-gap-item:16px;
+    --section-title-text-size:24px;
+    --card-section-text-color:#fff;
+    --card-section-gap-item:16px;
+}
+section{
+    padding:0px var(--card-section-horizontal-padding);
+    gap:var(--card-section-gap-item);
+    width:100%;
+}
+h1{
+    font-size:var(--section-title-text-size);
+    color:var(--card-section-text-color);
+    width:100%;
+}
+#cardArray{
+    display: flex;
+    flex-direction: column;
+    gap: var(--card-section-gap-item);
+}

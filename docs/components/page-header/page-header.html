@@ -1,0 +1,40 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="{{ site.baseurl }}/" target="_top">
+        <style>
+            body {
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="style/sanitize.css">
+            <link rel="stylesheet" href="style/global.css">
+            <link rel="stylesheet" href="components/page-header/page-header.css">
+
+            <div id="container">
+                <h1 class="title">
+                    <slot name="title">title</slot>
+                </h1>
+                <span class="date">
+                    <slot name="date">yyyy/mm/dd</slot>
+                </span>
+                <p class="content">
+                    <slot name="content">content</slot>
+                </p>
+            </div>
+        </template>
+        <page-header>
+            <span slot="title">title</span>
+            <span slot="date">2023/10/25</span>
+            <span slot="content">content</span>
+        </page-header>
+        <script src="components/page-header/page-header.js"></script>
+    </body>
+</html>

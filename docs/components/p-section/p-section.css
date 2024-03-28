@@ -1,0 +1,27 @@
+:host{
+    --section-gap-item:16px;
+    --section-title-text-size:24px;
+    --section-content-marginleft:16px;
+    --section-content-text-size:16px;
+    --section-text-color:#fff;
+    --section-text-color:#fff;
+    --section-horizontal-padding:16px;
+}
+section{
+    padding:0px  var(--section-horizontal-padding);
+    gap:var(--section-gap-item);
+    width:100%;
+}
+h1{
+    font-size:var(--section-title-text-size);
+    color:var(--section-text-color);
+    width:100%;
+}
+.section-content{
+    color:var(--section-text-color);
+    padding-left:var(--section-content-marginleft)
+    ;
+    font-size:var(--section-content-text-size);
+    width:100%;
+    line-height: 1.8em;
+}

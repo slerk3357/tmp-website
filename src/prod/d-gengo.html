@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="http://127.0.0.1:5500/src/" target="_top">
+        <title>部誌「D言語」 - 群馬工業高等専門学校 電算部</title>
+        <link rel="stylesheet" href="style/sanitize.css">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/page.css">
+        <script src="components/header/header.js"></script>
+        <script src="components/nav-menu/nav-menu.js"></script>
+        <script src="components/toc/toc.js"></script>
+        <script src="components/page-header/page-header.js"></script>
+        <script src="components/p-section/p-section.js"></script>
+        <script src="components/card-section/card-section.js"></script>
+        <script src="components/card/card.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="main">
+                <top-header id="topHeader"></top-header>
+                <main>
+                    <page-header>
+                        <span slot="title">部誌「D言語」</span>
+                        <span slot="date">2023/11/03</span>
+                        <span slot="content">ここではこれまでの部誌を見ることができます。</span>
+                    </page-header>
+                    <p-section>
+                        <span slot="title">部誌のリンク</span>
+                        <div slot="content">
+                            <h3><a href="https://www.docswell.com/s/nitgc_densan/Z4Q6W1-Dlang_v2023">2023年度</a></h3>
+                            <p>
+                                2023年度は、おそらく過去一の内容量で、<a href="https://24th.kokasai.com/">工華祭</a>ではオンラインのみでの掲載としました。
+                            </p>
+                        </div>
+                        <div slot="content">
+                            <h3><a href="https://nitgc-densan-club.github.io/21st.nitgc-densan-club.github.io/contents/kokasai/23rd/frontpage.html">2021年度</a></h3>
+                            <p>
+                                2021年度は、新型コロナウイルス感染症により、部誌をオンラインでの掲載をメインとすることにしました。
+                                Rust製のmdbookを使用して作成されています。
+                            </p>
+                        </div>
+                        <div slot="content">
+                            <h3><a href="https://gitlab.com/nitgc-densan-club/2019-club-journal/uploads/693be238c36934a936c13e6f8c99ac73/main.pdf">2019年度</a></h3>
+                        </div>
+                        <div slot="content">
+                            <h3><a href="https://www.dropbox.com/s/w7av9vhwqby5oy1/densan2014.pdf?dl=0">2014年度</a></h3>
+                        </div>
+                        <div slot="content">
+                            <h3><a href="https://www.dropbox.com/s/2gqmu2ntuolxmzn/2013%E9%9B%BB%E7%AE%97%E9%83%A8%E8%AA%8C%E3%80%8CD%E8%A8%80%E8%AA%9E%E3%80%8D.pdf">2013年度</a></h3>
+                        </div>
+                    </p-section>
+                </main>
+            </div>
+            <toc-element id="toc">
+                <li slot="toc-item">部誌「D言語」</li>
+                <li slot="toc-item">部誌のリンク</li>
+            </toc-element>
+            <nav-menu id="menu"></nav-menu>
+        </div>
+    </body>
+</html>

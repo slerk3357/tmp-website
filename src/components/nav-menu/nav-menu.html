@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="http://127.0.0.1:5500/src/" target="_top">
+        <style>
+            body {
+                --top-header-height:48px;
+                height: 300dvh;
+            }
+        </style>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="style/sanitize.css">
+            <link rel="stylesheet" href="style/global.css">
+            <link rel="stylesheet" href="components/nav-menu/nav-menu.css">
+
+            <div id="menu" class="not-loaded">
+                <menu>
+                    <li>
+                        <a href="./">
+                            <span> Home </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <span> About </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="prod/">
+                            <span> Product </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news/">
+                            <span> News </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="topic/">
+                            <span> Topic </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="policy.html">
+                            <span> Policy </span>
+                        </a>
+                    </li>
+                </menu>
+            </div>
+        </template>
+        <nav-menu></nav-menu>
+        <script src="components/nav-menu/nav-menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="http://127.0.0.1:5500/src/" target="_top">
+        <style>
+            body {
+                background-color: #000;
+            }
+        </style>
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="style/sanitize.css">
+            <link rel="stylesheet" href="style/global.css">
+            <link rel="stylesheet" href="components/p-section/p-section.css">
+
+            <section>
+                <h1>
+                    <slot name="title">title</slot>
+                </h1>
+                <p class="section-content">
+                    <slot name="content">content</slot>
+                </p>
+            </section>
+        </template>
+        <p-section>
+            <span slot="title">HOME</span>
+            <span slot="content">ここは群馬高専のホームページです。</span>
+        </p-section>
+        <script src="components/p-section/p-section.js"></script>
+    </body>
+</html>

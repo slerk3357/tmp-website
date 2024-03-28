@@ -1,0 +1,46 @@
+:host{
+    --card-gap-ele:8px;
+    --card-date-text-size:16px;
+    --card-title-text-size:24px;
+    --card-text-color:#fff;
+    --card-content-text-size:16px;
+    --card-content-marginleft:16px;
+    --card-vertical-padding:4px;
+    --card-horizontal-padding:16px;
+    --card-border-radius:12px;
+}
+
+div{
+    width:100%;
+    background-color:#888;
+    border-radius: var(--card-border-radius);
+    padding:var(--card-vertical-padding) var(--card-horizontal-padding);
+    gap:var(--card-gap-ele);
+}
+.date{
+    color:var(--card-text-color);
+    width:100%;
+    font-size:var(--card-date-text-size);
+}
+h2{
+    color:var(--card-text-color);
+    width:100%;
+    font-size:var(--card-title-text-size);
+}
+.card-content{
+    width:100%;
+    font-size:var(--card-content-text-size);
+    color:var(--card-text-color);
+    padding-left:var(--card-content-marginleft);
+    line-height: 1.8em;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+#anchor{
+    text-decoration: none;
+}

@@ -1,0 +1,63 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="{{ site.baseurl }}/" target="_top">
+        <title>CTF（セキリュティコンテスト）とは - 群馬工業高等専門学校 電算部</title>
+        <link rel="stylesheet" href="style/sanitize.css">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/page.css">
+        <script src="components/header/header.js"></script>
+        <script src="components/nav-menu/nav-menu.js"></script>
+        <script src="components/toc/toc.js"></script>
+        <script src="components/page-header/page-header.js"></script>
+        <script src="components/p-section/p-section.js"></script>
+        <script src="components/card-section/card-section.js"></script>
+        <script src="components/card/card.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="main">
+                <top-header id="topHeader"></top-header>
+                <main>
+                    <page-header>
+                        <span slot="title">CTF（セキリュティコンテスト）とは</span>
+                        <span slot="date">2023/11/03</span>
+                        <span slot="content">CTF（セキリュティコンテスト）について紹介します。</span>
+                    </page-header>
+                    <p-section>
+                        <span slot="title">CTFとは？</span>
+                        <span slot="content">CTF(Capture The Flag)は「鍵」を探す一種のゲームです。海外・国内問わず流行の兆しを見せており、年々参加者は増えています。「鍵」は常に暗号などで秘匿されており、「鍵」を手に入れるためには、それを解くための技術力が必要。インターネットやデータベースなど、さまざまな知識を駆使して「鍵」の正体を解き明かします。</span>
+                    </p-section>
+                    <p-section>
+                        <span slot="title">CTFの参加方法</span>
+                        <span slot="content">CTFは様々な場所で開催されます。参加料はほとんどすべてが無料。また、オンライン上で参加できることがほとんどです。パソコン一台さえあれば、ほとんどのコンテストに参加できるでしょう。</span>
+                    </p-section>
+                    <p-section>
+                        <span slot="title">CTFの種類</span>
+                        <span slot="content">
+                            CTFを解くには、情報に関連する広い知識が必要です。その一例を紹介します。<br>
+                            ・暗号解読<br>
+                            暗号解読には、その暗号に対する理解が必要です。現実のシステムでよく用いられる「文字」だけの暗号ではなく、「画像」や「アスキーアート」を利用した暗号もあります。暗号を解くため、即興でプログラムを作成する場合もあるでしょう。<br>
+                            ・脆弱性<br>
+                            与えられたプログラムの脆弱性（バグ）を利用するものがあります。インターネットで公開されている、脆弱性情報データベースを駆使しながら、プログラムの不具合をうまく利用し、「鍵」を手に入れましょう。<br>
+                            ・ネットワーク / Web<br>
+                            Webサイトに対し、攻撃を行うことで「鍵」を得ることができます。Webサイトに攻撃を行うためには、そのWebサイトの特性をよく理解する必要があるでしょう。ウェブサイトの技術やネットワークの技術に対する理解も必要です。
+                        </span>
+                    </p-section>
+                </main>
+            </div>
+            <toc-element id="toc">
+                <li slot="toc-item">CTF（セキリュティコンテスト）とは</li>
+                <li slot="toc-item">CTFとは？</li>
+                <li slot="toc-item">CTFの参加方法</li>
+                <li slot="toc-item">CTFの種類</li>
+            </toc-element>
+            <nav-menu id="menu"></nav-menu>
+        </div>
+    </body>
+</html>

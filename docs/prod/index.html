@@ -1,0 +1,55 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="{{ site.baseurl }}/" target="_top">
+        <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/prod/">
+        <title>Product - 群馬工業高等専門学校 電算部</title>
+        <link rel="stylesheet" href="style/sanitize.css">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/page.css">
+        <script src="components/header/header.js"></script>
+        <script src="components/nav-menu/nav-menu.js"></script>
+        <script src="components/toc/toc.js"></script>
+        <script src="components/page-header/page-header.js"></script>
+        <script src="components/p-section/p-section.js"></script>
+        <script src="components/card-section/card-section.js"></script>
+        <script src="components/card/card.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="main">
+                <top-header id="topHeader"></top-header>
+                <main>
+                    <page-header>
+                        <span slot="title">Product</span>
+                        <span slot="date">2023/11/03</span>
+                        <span slot="content">ここは制作物・部誌一覧です。また、過去の電算部公式ページもあります。</span>
+                    </page-header>
+                    <card-section>
+                        <span slot="title">制作物・部誌一覧</span>
+                        <digest-card href="prod/d-gengo.html" slot="card">
+                            <span slot="date">2023/11/03</span>
+                            <span slot="title">部誌「D言語」</span>
+                            <span slot="content">ここではこれまでの部誌を見ることができます。</span>
+                        </digest-card>
+                        <digest-card href="prod/history.html" slot="card">
+                            <span slot="date">2023/11/03</span>
+                            <span slot="title">過去の電算部公式ページ</span>
+                            <span slot="content">ここに過去の電算部公式ページのリンクをまとめています。</span>
+                        </digest-card>
+                    </card-section>
+                </main>
+            </div>
+            <toc-element id="toc">
+                <li slot="toc-item">Product</li>
+                <li slot="toc-item">制作物・部誌一覧</li>
+            </toc-element>
+            <nav-menu id="menu"></nav-menu>
+        </div>
+    </body>
+</html>

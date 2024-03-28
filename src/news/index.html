@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="http://127.0.0.1:5500/src/" target="_top">
+        <title>Topic - 群馬工業高等専門学校 電算部</title>
+        <link rel="stylesheet" href="style/sanitize.css">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/page.css">
+        <script src="components/header/header.js"></script>
+        <script src="components/nav-menu/nav-menu.js"></script>
+        <script src="components/toc/toc.js"></script>
+        <script src="components/page-header/page-header.js"></script>
+        <script src="components/p-section/p-section.js"></script>
+        <script src="components/card-section/card-section.js"></script>
+        <script src="components/card/card.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="main">
+                <top-header id="topHeader"></top-header>
+                <main>
+                    <page-header>
+                        <span slot="title">News</span>
+                        <span slot="date">2023/11/03</span>
+                        <span slot="content">ここにはホームページの更新履歴を掲載しています。</span>
+                    </page-header>
+                    <card-section>
+                        <span slot="title">更新履歴</span>
+                        <digest-card href="news/23rd02.html" slot="card">
+                            <span slot="date">2023/11/03</span>
+                            <span slot="title">2023年度 D言語</span>
+                            <span slot="content">2023年度電算部の部誌です。この部誌は第45回関東信越地区高等専門学校文化発表会や、群馬工業高等専門学校の文化祭「第24回 工華祭」にて配布されました。</span>
+                        </digest-card>
+                        <digest-card href="news/23rd01.html" slot="card">
+                            <span slot="date">2023/11/03</span>
+                            <span slot="title">新ホームページ開設！</span>
+                            <span slot="content">群馬高専電算部の新たなホームページを公開しました。このホームページは2023年度に作成され、電算部Web班が運営しています。また、過去の電算部の公式ページもこちらから見ることができ、見てみると面白いかも？</span>
+                        </digest-card>
+                    </card-section>
+                </main>
+            </div>
+            <toc-element id="toc">
+                <li slot="toc-item">News</li>
+                <li slot="toc-item">更新履歴</li>
+            </toc-element>
+            <nav-menu id="menu"></nav-menu>
+        </div>
+    </body>
+</html>

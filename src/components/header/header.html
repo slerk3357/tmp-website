@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="http://127.0.0.1:5500/src/" target="_top">
+    </head>
+    <body>
+        <template>
+            <link rel="stylesheet" href="style/sanitize.css">
+            <link rel="stylesheet" href="style/global.css">
+            <link rel="stylesheet" href="components/header/header.css">
+
+            <header id="topHeader">
+                <h1><a href="./">
+                    <span>群馬高専</span>
+                    <span>　</span>
+                    <span>電算部</span>
+                </a></h1>
+                <div id="opButtons">
+                    <button id="tocButton">
+                        <span>
+                            <span>目次</span>
+                        </span>
+                    </button>
+                    <button class="menu-trigger" id="menuButton">
+                        <span></span>
+                        <span>menu</span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </template>
+        <top-header></top-header>
+        <script src="components/header/header.js"></script>
+    </body>
+</html>

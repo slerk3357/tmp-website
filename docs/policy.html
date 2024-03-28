@@ -1,0 +1,47 @@
+---
+---
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="{{ site.baseurl }}/" target="_top">
+        <title>サイトポリシー - 群馬工業高等専門学校 電算部</title>
+        <link rel="stylesheet" href="style/sanitize.css">
+        <link rel="stylesheet" href="style/global.css">
+        <link rel="stylesheet" href="style/index.css">
+        <link rel="stylesheet" href="style/page.css">
+        <script src="components/header/header.js"></script>
+        <script src="components/nav-menu/nav-menu.js"></script>
+        <script src="components/toc/toc.js"></script>
+        <script src="components/page-header/page-header.js"></script>
+        <script src="components/p-section/p-section.js"></script>
+        <script src="components/card-section/card-section.js"></script>
+        <script src="components/card/card.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <div id="main">
+                <top-header id="topHeader"></top-header>
+                <main>
+                    <page-header data-nondescribe>
+                        <span slot="title">サイトポリシー</span>
+                        <span slot="date">2023/11/03</span>
+                    </page-header>
+                    <p-section>
+                        <span slot="title">免責事項</span>
+                        <span slot="content">当ブログからのリンクなどで移動したサイトで提供される情報、サービス等について一切の責任を負いません。</span>
+                        <span slot="content">また当ブログのコンテンツ・情報について、できる限り正確な情報を提供するように努めておりますが、正確性や安全性、合法性を保証するものではありません。</span>
+                        <span slot="content">情報が古くなっていたり誤情報が含まれている可能性があります。</span>
+                        <span slot="content">当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。</span>
+                    </p-section>
+                </main>
+            </div>
+            <toc-element id="toc">
+                <li slot="toc-item">サイトポリシー</li>
+                <li slot="toc-item">免責事項</li>
+            </toc-element>
+            <nav-menu id="menu"></nav-menu>
+        </div>
+    </body>
+</html>
