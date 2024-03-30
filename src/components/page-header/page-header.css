@@ -1,50 +1,51 @@
-:host{
-    --page-header-gap-ele:8px;
-    --page-header-date-text-size:16px;
-    --page-header-title-text-size:32px;
-    --page-header-text-color:#fff;
-    --page-header-content-text-size:16px;
-    --page-header-content-marginleft:16px;
-    --page-header-horizontal-padding:16px;
-    --page-header-border-radius:12px;
+:host {
+    --page-header-gap-ele: 8px;
+    --page-header-date-text-size: 16px;
+    --page-header-title-text-size: 32px;
+    --page-header-text-color: #fff;
+    --page-header-content-text-size: 16px;
+    --page-header-content-marginleft: 16px;
+    --page-header-horizontal-padding: 16px;
+    --page-header-border-radius: 12px;
 }
 
-div{
+div {
     display: flex;
     flex-direction: column;
-    width:100%;
+    width: 100%;
     border-radius: var(--page-header-border-radius);
-    padding:0 var(--page-header-horizontal-padding);
-    gap:var(--page-header-gap-ele);
+    padding: 0 var(--page-header-horizontal-padding);
+    gap: var(--page-header-gap-ele);
     color: var(--page-header-text-color);
 }
 
-h1.title{
-    color:var(--page-header-text-color);
-    width:100%;
+h1.title {
+    color: var(--page-header-text-color);
+    width: 100%;
     margin: 0px;
-    font-size:var(--page-header-title-text-size);
+    font-size: var(--page-header-title-text-size);
     font-family: "Zen Maru Gothic", sans-serif;
 }
 .nontitle > h1.title {
     display: none;
 }
 
-span.date{
-    width:100%;
-    font-size:var(--page-header-date-text-size);
+span.date {
+    width: 100%;
+    font-size: var(--page-header-date-text-size);
 }
 .nondate > span.date {
     display: none;
 }
 
-p.content{
-    width:100%;
-    font-size:var(--page-header-content-text-size);
-    color:var(--page-header-text-color);
-    padding-left:var(--page-header-content-marginleft);
+p.content {
+    width: 100%;
+    font-size: var(--page-header-content-text-size);
+    color: var(--page-header-text-color);
+    padding-left: var(--page-header-content-marginleft);
     line-height: 1.8em;
 }
+
 .nondescribe > p.content {
     display: none;
 }
